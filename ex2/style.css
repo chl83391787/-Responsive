@@ -1,0 +1,39 @@
+.line1 {
+  border-top:1px solid #000;
+  position: relative;
+  transform: translateY(25px);
+}
+
+.width{
+  position: absolute;
+  /*   transform: translate( X, Y ); */
+  transform: translateX(-50%, 100px);
+  left: 50%;
+}
+.h-1n1, .h-1n2,.h-1n3,.h-1n4{
+  position: absolute;
+  border: 1px solid #000;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.h-1n1{
+  left: 360px;
+}
+.h-1n2{
+  left: 760px;
+}
+.h-1n3{
+  left: 1080px;
+}
+.h-1n4{
+  left: 1440px;
+}
+.box1{
+  width: 300px; height: 300px;
+  position: fixed;
+  background-color: #a7a7a7;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
