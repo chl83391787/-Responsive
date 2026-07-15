@@ -1,3 +1,38 @@
+
+.line1{
+  border: 1px solid #000;
+  position: relative;
+  /* transform: translateY 세로이동 */
+  transform: translateY(300px);
+}
+.width{
+  position: absolute;
+}
+.h-1n::after{
+  position: absolute;
+  top: 100%;
+  /* left: 50%;를 설정하면 중간으로 이동함. */
+  left: 60%;
+  transform: translateX(-50%);
+}
+.h-1n1::after{content: "360";
+/* content: "360"글씨를 넣는 역할 이라고 보면됌 */
+}
+.h-1n2::after{content: "760";}
+.h-1n3::after{content: "1080";}
+.h-1n4::after{content: "1440";}
+.h-1n1, .h-1n2,.h-1n3,.h-1n4{
+  position: absolute;
+  border: 1px solid #000;
+  height: 50px;
+  top:50%;
+  /* transform: translateY을 잘 이용하면 중간으로 이동하는데 어려움이 없음. 100/2를 해준다고 보면 되는 원리*/
+  transform: translateY(-50%);
+}
+.h-1n1{left: 360px;}
+.h-1n2{left: 760px;}
+.h-1n3{left: 1080px;}
+.h-1n4{left: 1440px;}
 .box1{
   width: 100px; height: 100px;
   background-color: aquamarine;
@@ -13,3 +48,14 @@ body:hover .box1{
   /* 퍼센트가 작아지면 작아질 수록 짧게 움직임 -+ 위치를 바꾸면 반대 방향으로 움직임*/
   transform: translate(-40% , -40%);
 }
+.box2 {
+  position: absolute;
+  width: 61px; height: 20px;
+  background-color: aqua;
+  top:30px; left: 760px;
+  transform: translateX(-50%);
+}
+.box2:hover {
+  transform: translateX(0);
+}
+
