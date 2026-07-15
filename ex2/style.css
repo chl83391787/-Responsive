@@ -55,7 +55,7 @@ body{height: 100vh;}
 body:hover .box1 {
   transform: translate(-40%,-40%);
 }
-/* 움직이는 */
+/* 움직이는 초록박스*/
 .box2{
   position: absolute;
   width: 61px; height: 20px;

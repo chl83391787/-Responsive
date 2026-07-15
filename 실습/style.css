@@ -1,0 +1,15 @@
+.box1{
+  width: 100px; height: 100px;
+  background-color: aquamarine;
+  position: fixed;
+  left: 10%; top: 10%;
+  transform: translateX(-50% , -50%);
+  transition: 0.8s;
+}
+body{
+  height: 100vh;
+}
+body:hover .box1{
+  /* 퍼센트가 작아지면 작아질 수록 짧게 움직임 -+ 위치를 바꾸면 반대 방향으로 움직임*/
+  transform: translate(-40% , -40%);
+}
