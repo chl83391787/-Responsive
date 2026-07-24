@@ -1,4 +1,24 @@
 :root{
---color-background-Tertiary:  #FAF9F5
-
+  /* 기본 배경 */
+--color-background-tertiary: #faf9f5;
+/* 포인트 컬러 */
+--color-background-info: #d6e4f6;
+--color-background-text-info:#3266ad;
+--color-background-border-info: #4682d5;
+/* 보조색상 */
+--color-background-border-tertiary: #1f1e1d26;
+--color-background-inverse: #14141326;
+}
+:root {
+  --main: var(--color-background-text-info);
+  --blue-dark: #2441e6;
+  --ink: #333;
+  --muted: #6f7178;
+  --line: #e3e4e8;
+  --soft-blue: #eef5ff;
+  --soft-gray: #f7f7f7;
+  --container: 80rem;
+  --radius-sm: .625rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
 }
